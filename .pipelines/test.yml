@@ -1,0 +1,40 @@
+schedules:
+- cron: "0 12 * * *"
+  branches:
+    include:
+    - main
+  always: true
+
+strategy:
+  matrix:
+    ubuntu:
+      imageName: ubuntu-latest
+    macos:
+      imageName: macos-latest
+    windows:
+      imageName: windows-latest
+
+pool:
+  vmImage: $(imageName)
+
+steps:
+- task: UseDotNet@2
+  displayName: Setup .NET
+  inputs:
+    version: 8.0.x
+
+- script: dotnet restore
+  displayName: Restore dependencies
+
+- script: dotnet build --no-restore
+  displayName: Build
+
+- script: npx --yes --loglevel info azurite --version
+  displayName: Install Azurite
+
+# use bash even on Windows to run Azurite in the background (& for asynchronous bash command)
+- bash: npx --yes azurite --silent --inMemoryPersistence &
+  displayName: Start Azurite
+
+- script: dotnet test --no-build --verbosity normal
+  displayName: Test
