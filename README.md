@@ -6,4 +6,4 @@ This repository has a sample of how you can run Azurite in your continuous integ
 
 See the GitHub Actions workflow file [`.github/workflows/test.yml`](.github/workflows/test.yml) for CI sample.
 
-See [`StorageTests.cs`](StorageTests.cs) for a sample of how to use Azurite in some .NET tests. The sample uses C# and xUnit.
+See [`tests/StorageTests.cs`](tests/StorageTests.cs) for a sample of how to use Azurite in some .NET tests. The sample uses C# and xUnit.
