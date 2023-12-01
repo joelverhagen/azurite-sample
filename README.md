@@ -8,6 +8,6 @@ The CI services with samples are listed below:
 
 | CI service      | Status                                                                                                                                                                                 | Sample                                                             |
 | --------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
-| Azure Pipelines | [![Azure Pipelines](https://dev.azure.com/joelverhagen/oss/_apis/build/status%2Fjoelverhagen.azurite-sample)](https://dev.azure.com/joelverhagen/oss/_build?definitionId=1&_a=summary) | [`.github/workflows/test.yml`](.github/workflows/test.yml#L37-L46) |
-| GitHub Actions  | [![GitHub Actions](https://github.com/joelverhagen/azurite-sample/actions/workflows/test.yml/badge.svg)](https://github.com/joelverhagen/azurite-sample/actions/workflows/test.yml)    | [`.pipelines/test.yml`](.pipelines/test.yml#L32-L40)                       |
+| Azure Pipelines | [![Azure Pipelines](https://dev.azure.com/joelverhagen/oss/_apis/build/status%2Fjoelverhagen.azurite-sample)](https://dev.azure.com/joelverhagen/oss/_build?definitionId=1&_a=summary) | [`.pipelines/test.yml`](.pipelines/test.yml#L32-L40)               |
+| GitHub Actions  | [![GitHub Actions](https://github.com/joelverhagen/azurite-sample/actions/workflows/test.yml/badge.svg)](https://github.com/joelverhagen/azurite-sample/actions/workflows/test.yml)    | [`.github/workflows/test.yml`](.github/workflows/test.yml#L37-L46) |
 
