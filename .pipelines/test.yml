@@ -7,11 +7,11 @@ schedules:
 
 strategy:
   matrix:
-    ubuntu:
-      imageName: ubuntu-latest
-    macos:
+    macos-latest:
       imageName: macos-latest
-    windows:
+    ubuntu-latest:
+      imageName: ubuntu-latest
+    windows-latest:
       imageName: windows-latest
 
 pool:
